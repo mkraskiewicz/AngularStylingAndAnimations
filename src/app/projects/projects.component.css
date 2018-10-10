@@ -2,7 +2,26 @@
     border: 1px solid #ccc;
 }
 
-.marked {
-    border: 2px solid blue;
+.loading-bar {
+    widows: 200px;
+    height: 20px;
+    border: 1px solid black;
+    margin: auto;
+    box-sizing: content-box
 }
 
+.loading-bar-element {
+    width: 0;
+    height: 20px;
+    background-color: deepskyblue;
+    animation: loading 2s ease-out infinite;
+}
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
